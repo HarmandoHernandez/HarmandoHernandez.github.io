@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AV</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/rom.css" />
+
+    <link rel="stylesheet" href="./css/nav.css" />
+
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body class="body">
+    <aside class="wall wall--left"></aside>
+    <main class="wall wall--main">
+      <!-- HOME -->
+      <article class="home view" id="home">
+        <img
+          src="./assets/img/me.png"
+          class="home__logo"
+          alt="Armando Hernández Venegas"
+        />
+        <h2 class="home__name">José Armando Hernández Venegas</h2>
+        <h3 class="home__rol">Programador Web</h3>
+        <div class="home__insignia">
+          <ul class="insignia__list" id="insignia-list"></ul>
+          <template id="bange-template">
+            <li class="insignia__option">
+              <img src="" class="insignia__img" alt="" />
+            </li>
+          </template>
+        </div>
+      </article>
+      <!-- Gallery -->
+      <article class="gallery view" id="projects">
+        <article class="frame">
+          <img
+            src="./galery/background-chakras.jpg"
+            alt="tree"
+            class="frame__img"
+          />
+        </article>
+        <article class="frame">
+          <img src="./galery/tree.jpeg" alt="oto" class="frame__img" />
+        </article>
+        <article class="frame">
+          <img
+            src="./galery/editorial.jpeg"
+            alt="minimal clock"
+            class="frame__img"
+          />
+        </article>
+        <article class="frame">
+          <img src="./galery/cat.jpeg" alt="Dailyroutine" class="frame__img" />
+        </article>
+        <article class="frame">
+          <img src="./galery/love.jpeg" alt="other" class="frame__img" />
+        </article>
+      </article>
+    </main>
+    <aside class="wall wall--right"></aside>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__option">
+          <a href="#home" class="nav__option-title">Home</a>
+        </li>
+        <li class="nav__option">
+          <a href="#projects" class="nav__option-title">Projects</a>
+        </li>
+        <li class="nav__option">
+          <a href="#about" class="nav__option-title">About me</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <span class="line"></span> -->
+
+    <!-- <article class="projects">
+      <a href="#" class="nav__logo">AV</a>
+      <button class="nav__contact">Contact me</button>
+      
+    </article> -->
+
+    <!--   <footer class="footer" id="footer">
+      <div id="footer__social-media"></div>
+      <img
+        src="./assets/img/Third/ThirdLogo.svg"
+        alt="AV logo"
+        class="footer__logo"
+      />
+    </footer>
+ -->
+
+    <template id="social-media__option">
+      <a href="" target="_blank" class="">
+        <img src="" alt="" />
+      </a>
+    </template>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

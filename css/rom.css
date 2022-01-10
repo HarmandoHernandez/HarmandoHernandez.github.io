@@ -1,0 +1,42 @@
+.wall {
+  background-color: #f7f1e3;
+  backdrop-filter: blur(10px);
+}
+
+.wall--main {
+  width: 60vw;
+  height: 60vh;
+  box-sizing: border-box;
+}
+
+.wall--left,
+.wall--right {
+  position: absolute;
+
+  height: 100vh;
+  width: 20vw;
+
+  background-color: #d1ccc0;
+}
+
+.wall--left {
+  left: 0;
+
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 100% 85%, 100% 15%, 50% 0%);
+}
+
+.wall--right {
+  right: 0;
+
+  clip-path: polygon(0% 15%, 0% 85%, 50% 100%, 100% 100%, 100% 0%, 50% 0%);
+}
+
+.line {
+  position: absolute;
+
+  width: 1px;
+  height: calc(100vh + 100vw);
+
+  background-color: red;
+  transform: rotate(45deg);
+}
