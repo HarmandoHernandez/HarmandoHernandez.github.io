@@ -28,11 +28,11 @@
   font-size: 1.5em;
   line-height: 2.5em;
   font-weight: 600;
-  color: #000;
+  color: var(--black-color);
 
   transition: 0.1s;
-  border: 7px solid #000;
-  background-color: #d1ccc0;
+  border: 7px solid var(--black-color);
+  background-color: var(--gray-light-color);
 }
 
 .nav__option-title:hover {
