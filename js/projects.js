@@ -4,7 +4,7 @@ const $ = id => document.getElementById(id)
 
 const projects = []
 
-projects.push(new Project('OtO', 'Disfruta de una buena lectura sin malestares visuales. 🤓', 'https://harmandohernandez.github.io/OtO/', 'OtO.png', 'OTO'))
+projects.push(new Project('OtO', 'Disfruta de una buena lectura sin malestares visuales. 🤓', 'https://harmandohernandez.github.io/OtO/', 'oto.png', 'OTO'))
 projects.push(new Project('Minimal Clock', 'El hoy es un obsequio, por eso se llama presente.', 'https://harmandohernandez.github.io/minimal-clock/', 'clock.png', 'Minimal Clack'))
 
 const projectsList = $('projects')

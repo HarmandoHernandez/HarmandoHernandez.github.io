@@ -27,9 +27,9 @@ socials.push(new SocialMedia(
 ))
 
 const footerSocial = document.getElementById('footer__social-media')
-const socialOption = document.getElementById('social-media__option')
+const socialOption = document.getElementById('social-media__option') /
 
-loadSocial()
+// loadSocial()
 
 function loadSocial () {
   socials.forEach((social) => buildSocial(social))
