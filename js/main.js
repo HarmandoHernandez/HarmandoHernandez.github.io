@@ -7,5 +7,5 @@ const HASH = {
 const URLhash = window.location.hash.slice(1)
 
 if (!HASH[URLhash]) {
-  window.location.hash = '#home'
+  window.location.hash = HASH.home
 }

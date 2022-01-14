@@ -21,13 +21,21 @@
           src="./assets/img/me.png"
           class="home__logo"
           alt="Armando Hernández Venegas"
+          loading="lazy"
+          onerror="this.src='./assets/img/nofound500.png'"
         />
         <h2 class="home__name">José Armando Hernández Venegas</h2>
         <h3 class="home__rol">Programador Web</h3>
         <div class="home__insignia">
           <ul class="insignia__list" id="insignia-list"></ul>
           <template id="bange-template">
-            <li class="insignia__option"><img class="insignia__img" /></li>
+            <li class="insignia__option">
+              <img
+                loading="lazy"
+                class="insignia__img"
+                onerror="this.src='./assets/img/nofound64.png'"
+              />
+            </li>
           </template>
         </div>
       </article>
@@ -35,7 +43,11 @@
       <article class="projects view" id="projects">
         <template id="project-template">
           <figure class="project__frame">
-            <img class="project__img" />
+            <img
+              loading="lazy"
+              class="project__img"
+              onerror="this.src='./assets/img/nofound500.png'"
+            />
             <figcaption class="frame__caption">
               <a target="_blank" rel="noopener noreferrer">
                 <h3 class="frame__caption-title"></h3>
