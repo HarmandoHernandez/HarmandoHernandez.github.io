@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./css/rom.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/porjects.css" />
   </head>
   <body class="body">
-    <aside class="wall wall--left"></aside>
+    <span class="wall wall--left"></span>
     <main class="wall wall--main">
       <!-- HOME -->
       <article class="home view" id="home">
@@ -30,34 +30,35 @@
           </template>
         </div>
       </article>
-      <!-- Gallery -->
-      <article class="gallery view" id="projects">
-        <article class="frame">
-          <img
-            src="./galery/background-chakras.jpg"
-            alt="tree"
-            class="frame__img"
-          />
-        </article>
-        <article class="frame">
-          <img src="./galery/tree.jpeg" alt="oto" class="frame__img" />
-        </article>
-        <article class="frame">
-          <img
-            src="./galery/editorial.jpeg"
-            alt="minimal clock"
-            class="frame__img"
-          />
-        </article>
-        <article class="frame">
-          <img src="./galery/cat.jpeg" alt="Dailyroutine" class="frame__img" />
-        </article>
-        <article class="frame">
-          <img src="./galery/love.jpeg" alt="other" class="frame__img" />
-        </article>
+      <!-- Projects -->
+      <article class="projects view" id="projects">
+        <template id="project-template">
+          <figure class="project__frame">
+            <img class="project__img" />
+            <figcaption class="frame__caption">
+              <a target="_blank" rel="noopener noreferrer">
+                <h3 class="frame__caption-title"></h3>
+              </a>
+              <div class="frame__caption-description"></div>
+            </figcaption>
+          </figure>
+        </template>
+      </article>
+      <!-- About Me-->
+      <article class="view" id="about">
+        <!--  <a href="#" class="nav__logo">AV</a>
+        <button class="nav__contact">Contact me</button>
+        <footer class="footer" id="footer">
+          <div id="footer__social-media"></div>
+        </footer>
+        <template id="social-media__option">
+          <a href="" target="_blank" class="">
+            <img src="" alt="" />
+          </a>
+        </template> -->
       </article>
     </main>
-    <aside class="wall wall--right"></aside>
+    <span class="wall wall--right"></span>
     <nav class="nav">
       <ul class="nav__menu">
         <li class="nav__option">
@@ -72,28 +73,8 @@
       </ul>
     </nav>
 
-    <!-- <article class="projects">
-      <a href="#" class="nav__logo">AV</a>
-      <button class="nav__contact">Contact me</button>
-      
-    </article> -->
-
-    <!--   <footer class="footer" id="footer">
-      <div id="footer__social-media"></div>
-      <img
-        src="./assets/img/Third/ThirdLogo.svg"
-        alt="AV logo"
-        class="footer__logo"
-      />
-    </footer>
- -->
-
-    <template id="social-media__option">
-      <a href="" target="_blank" class="">
-        <img src="" alt="" />
-      </a>
-    </template>
-
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/projects.js" type="module"></script>
+    <script src="./js/social.js" type="module"></script>
   </body>
 </html>

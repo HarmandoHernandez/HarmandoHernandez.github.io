@@ -29,7 +29,7 @@ socials.push(new SocialMedia(
 const footerSocial = document.getElementById('footer__social-media')
 const socialOption = document.getElementById('social-media__option')
 
-// loadSocial()
+loadSocial()
 
 function loadSocial () {
   socials.forEach((social) => buildSocial(social))
@@ -43,18 +43,3 @@ function buildSocial (social) {
   img.alt = `${social.socialMedia} Tag of ${social.username}`
   footerSocial.appendChild(newSocial)
 }
-
-const back = document.getElementById('back')
-const header = document.getElementById('nav')
-
-back.addEventListener('click', () => {
-  window.scrollTo(0, 0)
-  header.focus()
-})
-/* document.addEventListener('keypress', getEventType, false);
-  function getEventType(event) {
-      console.log(event);
-  } */
-
-const abbrMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-const abbrMeses = ['En', 'Febr', 'Mzo', 'Abr', 'May', 'Jun', 'Jul', 'Agt', 'Sept', 'Oct', 'Nov', 'Dic']
