@@ -4,8 +4,8 @@
     "logo insignia"
     "name insignia"
     "rol insignia";
-  grid-template-columns: 300px max-content;
-  gap: 1em;
+  grid-template-columns: 18em max-content;
+  gap: 0.5em;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -71,8 +71,34 @@
 }
 
 .insignia__img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 3em;
+  aspect-ratio: 1;
+  margin: 0.6em;
   object-fit: cover;
+}
+
+/* - Mobile */
+@media only screen and (max-width: 630px) {
+  .home {
+    grid-template-areas:
+      "logo"
+      "name"
+      "rol"
+      "insignia";
+    grid-template-columns: 18em;
+    gap: 0em;
+  }
+
+  .home__insignia {
+    justify-self: start;
+    width: 100%;
+    height: max-content;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .insignia__option {
+    display: inline-block;
+  }
 }

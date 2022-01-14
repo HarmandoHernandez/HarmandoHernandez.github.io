@@ -37,6 +37,7 @@
   height: 100%;
 
   opacity: 0;
+  overflow: hidden;
 }
 
 .view:target {
@@ -46,4 +47,23 @@
 
   transition: opacity ease-in 0.4s, width ease-in 0.2s;
   opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .body {
+    font-size: 16px;
+  }
+}
+/* - Tablet */
+@media only screen and (max-width: 950px) {
+  .body {
+    font-size: 14px;
+  }
+}
+
+/* - Mobile */
+@media only screen and (max-width: 630px) {
+  .body {
+    font-size: 12px;
+  }
 }

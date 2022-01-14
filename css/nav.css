@@ -15,26 +15,45 @@
 
 .nav__option {
   z-index: 9;
-  padding: 10px;
+  padding: 0.6em;
   transform: perspective(260px) rotateX(10deg);
 }
 
 .nav__option-title {
   display: block;
-  padding: 10px;
+  padding: 0.6em;
   box-sizing: border-box;
 
   text-decoration: none;
   font-size: 1.5em;
-  line-height: 2.5em;
+  line-height: 2em;
   font-weight: 600;
   color: var(--black-color);
 
   transition: 0.1s;
-  border: 7px solid var(--black-color);
+  border: 0.3em solid var(--black-color);
   background-color: var(--gray-light-color);
 }
 
 .nav__option-title:hover {
   transform: translateX(2px) translateY(-9px);
+}
+
+/* - Mobile */
+@media only screen and (max-width: 630px) {
+  .nav__menu {
+    flex-direction: column;
+  }
+
+  .nav__option {
+    padding: 0.3em;
+  }
+
+  .nav__option-title {
+    padding: 0;
+  }
+
+  .nav__option-title:hover {
+    transform: none;
+  }
 }
