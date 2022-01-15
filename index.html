@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/porjects.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="icon" href="./assets/icons/favicon-256x256.png" />
   </head>
   <body class="body">
@@ -58,30 +59,40 @@
         </template>
       </article>
       <!-- About Me-->
-      <article class="view" id="about">
-        <!--  <a href="#" class="nav__logo">AV</a>
-        <button class="nav__contact">Contact me</button>
-        <footer class="footer" id="footer">
-          <div id="footer__social-media"></div>
-        </footer>
+      <article class="about view" id="about">
+        <img
+          src="./assets/img/av.png"
+          alt="AV logo, Armando Hernández V. logo"
+          class="about__logo"
+        />
+        <p class="about__me">
+          Aparte de la tecnología 👨‍💻, también me gusta pasar tiempo en la
+          naturaleza ⛰ y disfrutar de algún sendero en bicicleta. 🚵
+        </p>
+        <h4>Contáctame</h4>
+        <div id="about__social-media"></div>
         <template id="social-media__option">
-          <a href="" target="_blank" class="">
-            <img src="" alt="" />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="about__social-media"
+          >
+            <img class="about__social-media-img" />
           </a>
-        </template> -->
+        </template>
       </article>
     </main>
     <span class="wall wall--right"></span>
     <nav class="nav">
       <ul class="nav__menu">
         <li class="nav__option">
-          <a href="#home" class="nav__option-title">Home</a>
+          <a href="#home" class="nav__option-title">Principal</a>
         </li>
         <li class="nav__option">
-          <a href="#projects" class="nav__option-title">Projects</a>
+          <a href="#projects" class="nav__option-title">Proyectos</a>
         </li>
         <li class="nav__option">
-          <a href="#about" class="nav__option-title">About me</a>
+          <a href="#about" class="nav__option-title">Sobre mí</a>
         </li>
       </ul>
     </nav>
@@ -89,6 +100,6 @@
     <script src="./js/main.js" type="module"></script>
     <script src="./js/home.js" type="module"></script>
     <script src="./js/projects.js" type="module"></script>
-    <script src="./js/social.js" type="module"></script>
+    <script src="./js/about.js" type="module"></script>
   </body>
 </html>

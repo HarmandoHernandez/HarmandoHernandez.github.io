@@ -1,13 +1,11 @@
+const $ = id => document.getElementById(id)
 
-/**
- * Social Media
- */
 class SocialMedia {
-  constructor (socialMedia, username, link, srcTag) {
+  constructor (socialMedia, username, link, src) {
     this.socialMedia = socialMedia
     this.username = username
     this.link = link
-    this.srcTag = srcTag
+    this.src = src
   }
 }
 
@@ -26,20 +24,20 @@ socials.push(new SocialMedia(
   'https://img.shields.io/badge/GitHub-@HarmandoHernandez-333333?style=for-the-badge&logo=github&logoColor=white&labelColor=101010'
 ))
 
-const footerSocial = document.getElementById('footer__social-media')
-const socialOption = document.getElementById('social-media__option') /
+const footerSocial = $('about__social-media')
+const socialOption = $('social-media__option')
 
-// loadSocial()
-
-function loadSocial () {
+const loadSocial = () => {
   socials.forEach((social) => buildSocial(social))
 }
 
-function buildSocial (social) {
+const buildSocial = social => {
   const newSocial = socialOption.content.cloneNode(true)
   newSocial.querySelector('a').href = social.link
   const img = newSocial.querySelector('img')
-  img.src = social.srcTag
+  img.src = social.src
   img.alt = `${social.socialMedia} Tag of ${social.username}`
   footerSocial.appendChild(newSocial)
 }
+
+loadSocial()
